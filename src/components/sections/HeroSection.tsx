@@ -63,7 +63,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-muted-foreground text-sm sm:text-base lg:text-lg max-w-xl mb-8 sm:mb-10"
+              className="text-muted-foreground text-base sm:text-lg lg:text-lg max-w-xl mb-8 sm:mb-10"
             >
               Passionate about crafting elegant web applications and solving complex problems 
               with clean, efficient code. Building the future, one line at a time.
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-primary-glow font-medium hoverable inline-block text-sm sm:text-base"
+                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-primary-glow font-medium hoverable inline-block text-base sm:text-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -89,7 +89,7 @@ const HeroSection = () => {
               
               <motion.button
                 onClick={() => scrollToSection('contact')}
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-ghost-border hoverable text-sm sm:text-base"
+                className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-ghost-border hoverable text-base sm:text-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

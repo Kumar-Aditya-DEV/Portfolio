@@ -89,7 +89,7 @@ const LeetCodeSection = () => {
               href="https://leetcode.com/u/Aditya-Kumar-DEVP/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-primary-glow font-medium hoverable text-sm sm:text-base"
+              className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-primary-glow font-medium hoverable text-base sm:text-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

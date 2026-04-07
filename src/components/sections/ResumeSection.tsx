@@ -35,7 +35,7 @@ const ResumeSection = () => {
               Resume
             </h3>
             
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-base mb-6">
               Download or view my professional resume
             </p>
 

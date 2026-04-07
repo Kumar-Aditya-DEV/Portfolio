@@ -97,7 +97,7 @@ const ContactSection = () => {
 
             {/* Decorative */}
             <div className="hidden lg:block pt-6">
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 I'm always excited to work on new projects and collaborate with creative minds. 
                 Whether it's a web application, a coding challenge, or just a chat about tech — 
                 I'm here for it!
