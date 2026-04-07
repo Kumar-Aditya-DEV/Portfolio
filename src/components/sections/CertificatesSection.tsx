@@ -19,7 +19,9 @@ import certDeloitteTech from '@/assets/cert-deloitte-technology.jpg';
 import certDeloitteData from '@/assets/cert-deloitte-data-analytics.jpg';
 import certDeloitteCyber from '@/assets/cert-deloitte-cyber.jpg';
 import certWalmartSoftwareEng from '@/assets/cert-walmart-software-eng.jpg';
-
+import certCodeForge from '@/assets/cert-codeforge.jpg';
+import certProtoDash from '@/assets/cert-protodash.jpg';
+import certMahindra from '@/assets/cert-mahindra.jpg';
 type CertificateItem = {
   title: string;
   issuer: string;
@@ -30,6 +32,30 @@ type CertificateItem = {
 };
 
 const certificates: CertificateItem[] = [
+  {
+    title: 'ArtPark CodeForge Hackathon',
+    issuer: 'IISc Bangalore | Unstop',
+    date: 'April 2026',
+    type: 'workshop',
+    image: certCodeForge,
+    featured: true,
+  },
+  {
+    title: 'Artpark ProtoDash Challenge',
+    issuer: 'IISc Bangalore | Unstop',
+    date: 'April 2026',
+    type: 'workshop',
+    image: certProtoDash,
+    featured: true,
+  },
+  {
+    title: 'The Quiet Power Quiz',
+    issuer: 'Mahindra Rise',
+    date: 'April 2026',
+    type: 'course',
+    image: certMahindra,
+    featured: true,
+  },
   {
     title: 'Advanced Software Engineering Job Simulation',
     issuer: 'Walmart Global Tech | Forage',
@@ -242,7 +268,7 @@ const CertificatesSection = () => {
                 </h3>
 
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between text-sm text-muted-foreground gap-1">
-                  <span className="font-medium text-xs sm:text-sm">{cert.issuer}</span>
+                  <span className="font-medium text-sm sm:text-base">{cert.issuer}</span>
                   <span className="text-xs">{cert.date}</span>
                 </div>
               </motion.div>
