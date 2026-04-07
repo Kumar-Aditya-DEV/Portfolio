@@ -8,9 +8,9 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website showcasing my skills and projects with smooth animations and a clean design.',
     technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-    liveUrl: 'https://id-preview--f9e7492e-5313-4d0d-9d37-8d2b37267a29.lovable.app/',
+    liveUrl: '#',
     githubUrl: 'https://github.com/Kumar-Aditya-DEV',
-    image: 'https://image.thum.io/get/width/600/crop/400/https://id-preview--f9e7492e-5313-4d0d-9d37-8d2b37267a29.lovable.app/',
+    image: '/placeholder.svg',
   },
   {
     title: 'Blinkit Clone',
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
                   />
                 </div>
 
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                <p className="text-muted-foreground text-base mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
