@@ -42,8 +42,12 @@ const Index = () => {
       <CustomCursor />
       
       {/* Background Effects */}
-      <BackgroundAnimation />
-      <ThreeBackground />
+      {theme === 'dark' && (
+        <>
+          <BackgroundAnimation />
+          <ThreeBackground />
+        </>
+      )}
       
       {/* Navbar */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
