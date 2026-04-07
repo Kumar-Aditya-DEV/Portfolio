@@ -15,6 +15,9 @@ const skills = [
   { name: 'Postman', logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
   { name: 'REST APIs', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg' },
   { name: 'Responsive Design', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg' },
+  { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
+  { name: 'C++', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+  { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
 ];
 
 const SkillsSection = () => {
@@ -68,10 +71,10 @@ const SkillsSection = () => {
               <img
                 src={skill.logo}
                 alt={skill.name}
-                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                className={`w-8 h-8 sm:w-10 sm:h-10 object-contain ${skill.name === 'GitHub' ? 'github-logo' : ''}`}
                 loading="lazy"
               />
-              <span className="text-xs sm:text-sm font-medium text-foreground/90">{skill.name}</span>
+              <span className="text-sm sm:text-base font-medium text-foreground/90">{skill.name}</span>
             </motion.div>
           ))}
         </div>

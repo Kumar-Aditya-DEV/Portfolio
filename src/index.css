@@ -51,6 +51,7 @@
     --glass-border: 222 47% 20%;
     --gradient-start: 173 80% 50%;
     --gradient-end: 199 89% 48%;
+    --github-invert: 1;
   }
 
   .light {
@@ -85,6 +86,7 @@
     --glass-bg: 0 0% 100%;
     --glass-border: 220 13% 85%;
     --glow-primary: 173 80% 40%;
+    --github-invert: 0;
   }
 }
 
@@ -98,8 +100,12 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased text-lg md:text-xl;
     font-family: 'Inter', sans-serif;
+  }
+
+  p {
+    @apply text-lg md:text-xl leading-relaxed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -206,7 +212,7 @@
   }
 
   .section-subtitle {
-    @apply text-muted-foreground text-sm sm:text-base lg:text-lg max-w-2xl;
+    @apply text-muted-foreground text-lg sm:text-xl lg:text-2xl max-w-2xl;
   }
 
   /* Skill badge */
@@ -296,6 +302,10 @@
   .social-icon-btn:hover {
     @apply border-primary/50 text-primary bg-primary/10;
     box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.4);
+  }
+
+  .github-logo {
+    filter: invert(var(--github-invert));
   }
 }
 
