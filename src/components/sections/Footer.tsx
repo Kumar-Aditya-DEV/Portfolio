@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-muted-foreground text-xs sm:text-sm text-center px-4">
+          <p className="text-muted-foreground text-sm sm:text-base text-center px-4">
             © {currentYear} Aditya Kumar. All rights reserved.
           </p>
 
