@@ -48,18 +48,22 @@ const AboutSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="space-y-4 text-muted-foreground mb-8"
+              className="space-y-6 text-muted-foreground mb-12 text-lg leading-relaxed"
             >
-              <p>
-                I'm an aspiring software developer with a strong passion for web development 
-                and building intuitive digital experiences. Currently focused on mastering 
-                modern technologies like React, JavaScript, and MongoDB.
-              </p>
-              <p>
-                My approach combines a solid foundation in programming fundamentals with 
-                a constant drive to learn and adapt. I believe in writing clean, maintainable 
-                code and creating solutions that make a real impact.
-              </p>
+<p>
+  Hello! I'm <span className="text-foreground font-medium">Aditya Kumar</span>, a Software Developer based in India. 
+  I started my journey with curiosity about how things work behind the screen, which turned into a passion for building efficient software.
+</p>
+
+<p>
+  I specialize in creating responsive web apps using the <span className="text-primary font-medium">MERN stack</span> (MongoDB, Express.js, React, Node.js). 
+  I also regularly practice <span className="text-primary font-medium">Data Structures and Algorithms</span> to improve my problem-solving skills.
+</p>
+
+<p>
+  I enjoy combining <span className="text-foreground font-medium">creativity and logic</span>—whether designing clean UI or optimizing backend systems. 
+  I also like sharing knowledge and growing with the developer community.
+</p>
             </motion.div>
 
             {/* Interests */}

@@ -73,11 +73,15 @@ const Navbar = ({ theme, onThemeToggle }: NavbarProps) => {
                 e.preventDefault();
                 scrollToSection('#home');
               }}
-              className="text-xl font-bold font-display gradient-text hoverable"
+              className="flex items-center hoverable"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              AK
+              <img 
+                src="/favicon.png" 
+                alt="Logo" 
+                className="w-10 h-10 rounded-full object-cover border-2 border-primary/5"
+              />
             </motion.a>
 
             {/* Desktop Navigation */}

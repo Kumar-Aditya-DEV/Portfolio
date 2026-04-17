@@ -2,11 +2,27 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter, Youtube, ArrowDown } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo.png';
 
+const LeetCodeIcon = ({ size = 20 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path 
+      d="M13.483 0a1.374 1.374 0 0 0-.961.414l-4.32 4.244a1.09 1.09 0 0 0 0 1.556 1.131 1.131 0 0 0 1.578 0l3.511-3.453 2.31 2.271-7.078 6.988a1.131 1.131 0 0 0 0 1.578 1.09 1.09 0 0 0 1.556 0l7.078-6.988 2.309 2.272-3.511 3.453a1.131 1.131 0 0 0 0 1.578 1.09 1.09 0 0 0 1.556 0l4.32-4.244a1.374 1.374 0 0 0 0-1.945L14.444.414A1.374 1.374 0 0 0 13.483 0zm-6.135 11.013a1.131 1.131 0 0 0-1.578 0l-3.511 3.453-2.31-2.271a1.374 1.374 0 0 0-1.945 0c-.538.538-.538 1.408 0 1.945l4.32 4.244c.538.538 1.408.538 1.945 0l7.078-6.988a1.131 1.131 0 0 0 0-1.578z"
+      transform="translate(0, 3)"
+    />
+  </svg>
+);
+
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Kumar-Aditya-DEV', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/aditya-kumar-060ba6376/', label: 'LinkedIn' },
   { icon: Twitter, href: 'https://x.com/AdityaXDev', label: 'Twitter' },
   { icon: Youtube, href: 'https://www.youtube.com/@CodeVerseAditya', label: 'YouTube' },
+  { icon: LeetCodeIcon, href: 'https://leetcode.com/u/Aditya-Kumar-DEVP/', label: 'LeetCode' },
 ];
 
 const HeroSection = () => {
@@ -102,7 +118,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex items-center justify-center lg:justify-start gap-4"
+              className="flex items-center justify-center lg:justify-start gap-8 sm:gap-9"
             >
               {socialLinks.map((social, index) => (
                 <motion.a
