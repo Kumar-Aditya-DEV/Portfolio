@@ -280,8 +280,8 @@ const CertificatesSection = () => {
               >
                 {/* High Value Badge */}
                 {cert.featured && (
-                  <span className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/15 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-wide border border-primary/30">
-                    <Star size={10} className="fill-primary" />
+                  <span className="absolute top-3 right-3 z-20 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-[10px] sm:text-xs font-bold uppercase tracking-wider border border-white/20 shadow-xl glow-sm">
+                    <Star size={12} className="fill-primary-foreground" />
                     High Value
                   </span>
                 )}
