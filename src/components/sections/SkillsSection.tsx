@@ -8,16 +8,19 @@ const skills = [
   { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
   { name: 'React.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Express.js', logo: 'https://cdn.simpleicons.org/express' },
+  { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+  { name: 'Mongoose', logo: 'https://cdn.simpleicons.org/mongoose' },
   { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+  { name: 'Vercel', logo: 'https://cdn.simpleicons.org/vercel' },
   { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   { name: 'GitHub', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
   { name: 'Figma', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
   { name: 'Postman', logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
-  { name: 'REST APIs', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg' },
-  { name: 'Responsive Design', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg' },
+  { name: 'REST API', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg' },
+  { name: 'JWT', logo: 'https://jwt.io/img/pic_logo.svg' },
   { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
   { name: 'C++', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
-  { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
 ];
 
 const SkillsSection = () => {
@@ -71,7 +74,9 @@ const SkillsSection = () => {
               <img
                 src={skill.logo}
                 alt={skill.name}
-                className={`w-8 h-8 sm:w-10 sm:h-10 object-contain ${skill.name === 'GitHub' ? 'github-logo' : ''}`}
+                className={`w-8 h-8 sm:w-10 sm:h-10 object-contain ${
+                  ['GitHub', 'Vercel', 'Express.js'].includes(skill.name) ? 'dark-invert' : ''
+                }`}
                 loading="lazy"
               />
               <span className="text-sm sm:text-base font-medium text-foreground/90">{skill.name}</span>
