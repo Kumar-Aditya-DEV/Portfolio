@@ -1,16 +1,26 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Github, ArrowUpRight, Youtube } from 'lucide-react';
 
 const projects = [
+  {
+    title: 'Websites Clone Collection',
+    description: 'A curated collection of pixel-perfect frontend clones of popular websites like Captain Fresh and Curve Finance, focusing on high-fidelity UI and smooth animations.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'UI/UX'],
+    liveUrl: 'https://www.youtube.com/@CodeVerseAditya',
+    githubUrl: 'https://github.com/Kumar-Aditya-DEV/Websites_clone',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400',
+  },
   {
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website showcasing my skills and projects with smooth animations and a clean design.',
     technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
     liveUrl: '#',
     githubUrl: 'https://github.com/Kumar-Aditya-DEV',
-    image: '/placeholder.svg',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
+    image: '/favicon.png',
   },
   {
     title: 'Blinkit Clone',
@@ -18,6 +28,7 @@ const projects = [
     technologies: ['React', 'Node.js', 'CSS'],
     liveUrl: 'https://blinkit-web-clone-project.netlify.app/',
     githubUrl: 'https://github.com/Kumar-Aditya-DEV/Blinkit_Clone',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
     image: 'https://image.thum.io/get/width/600/crop/400/https://blinkit-web-clone-project.netlify.app/',
   },
   {
@@ -26,6 +37,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://rolex-clone-project.netlify.app/',
     githubUrl: 'https://github.com/Kumar-Aditya-DEV/Rolex_Clone',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
     image: 'https://image.thum.io/get/width/600/crop/400/https://rolex-clone-project.netlify.app/',
   },
   {
@@ -34,6 +46,7 @@ const projects = [
     technologies: ['React', 'API Integration', 'Netlify'],
     liveUrl: 'https://stockanalytix.netlify.app',
     githubUrl: 'https://github.com/Kumar-Aditya-DEV/stockanalytix.netlify.app',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
     image: 'https://image.thum.io/get/width/600/crop/400/https://stockanalytix.netlify.app/',
   },
   {
@@ -42,6 +55,7 @@ const projects = [
     technologies: ['Odoo', 'Python', 'JavaScript'],
     liveUrl: 'https://odoo-guj-vid.vercel.app/',
     githubUrl: 'https://github.com/harshit-kumar-dev/odoo-Guj-Vid',
+    videoUrl: 'https://www.youtube.com/@CodeVerseAditya',
     image: 'https://image.thum.io/get/width/600/crop/400/https://odoo-guj-vid.vercel.app/',
   },
 ];
@@ -158,6 +172,19 @@ const ProjectsSection = () => {
                     <Github size={16} />
                     <span>Source Code</span>
                   </motion.a>
+
+                  {project.videoUrl && (
+                    <motion.a
+                      href={project.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors hoverable"
+                      whileHover={{ x: 4 }}
+                    >
+                      <Youtube size={16} />
+                      <span>Video</span>
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>
