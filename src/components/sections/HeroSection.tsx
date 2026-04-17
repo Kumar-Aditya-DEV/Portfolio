@@ -77,7 +77,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12"
             >
               <motion.a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1dUpP40ENd77i_eeWoTbX94XiqC1zrU8N/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 sm:px-8 sm:py-4 rounded-xl btn-primary-glow font-medium hoverable inline-block text-base sm:text-lg"

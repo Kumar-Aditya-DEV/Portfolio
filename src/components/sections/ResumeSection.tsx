@@ -8,8 +8,8 @@ const ResumeSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [isHovered, setIsHovered] = useState(false);
 
-  // You'll replace this with your actual resume PDF path
-  const resumeUrl = '/resume.pdf';
+  // Updated resume link
+  const resumeUrl = 'https://drive.google.com/file/d/1dUpP40ENd77i_eeWoTbX94XiqC1zrU8N/view';
 
   return (
     <section className="py-16 relative">
@@ -21,9 +21,10 @@ const ResumeSection = () => {
           className="max-w-md mx-auto"
         >
           <div
-            className="glass-card-hover p-8 text-center relative overflow-hidden hoverable"
+            className="glass-card-hover p-8 text-center relative overflow-hidden hoverable cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={() => window.open(resumeUrl, '_blank')}
           >
             {/* Icon */}
             <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -53,6 +54,7 @@ const ResumeSection = () => {
                 className="flex items-center gap-2 px-4 py-2 rounded-lg btn-ghost-border text-sm hoverable"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={(e) => e.stopPropagation()}
               >
                 <Eye size={16} />
                 <span>View</span>
@@ -60,13 +62,15 @@ const ResumeSection = () => {
               
               <motion.a
                 href={resumeUrl}
-                download="Aditya_Kumar_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg btn-primary-glow text-sm hoverable"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={(e) => e.stopPropagation()}
               >
                 <Download size={16} />
-                <span>Download</span>
+                <span>Open</span>
               </motion.a>
             </motion.div>
 
@@ -87,17 +91,20 @@ const ResumeSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg btn-ghost-border text-sm hoverable"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Eye size={16} />
                   <span>View</span>
                 </a>
                 <a
                   href={resumeUrl}
-                  download="Aditya_Kumar_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg btn-primary-glow text-sm hoverable"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Download size={16} />
-                  <span>Download</span>
+                  <span>Open</span>
                 </a>
               </div>
             </motion.div>
