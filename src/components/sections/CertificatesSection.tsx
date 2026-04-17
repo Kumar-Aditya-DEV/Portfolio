@@ -22,6 +22,11 @@ import certWalmartSoftwareEng from '@/assets/cert-walmart-software-eng.jpg';
 import certCodeForge from '@/assets/cert-codeforge.jpg';
 import certProtoDash from '@/assets/cert-protodash.jpg';
 import certMahindra from '@/assets/cert-mahindra.jpg';
+import certTataGenAi from '@/assets/cert-tata-genai.png';
+import certTops3d from '@/assets/cert-tops-3d.png';
+import certTopsDesigningAi from '@/assets/cert-tops-designing-ai.png';
+import certTopsGit from '@/assets/cert-tops-git.png';
+import certTopsPythonAi from '@/assets/cert-tops-python-ai.png';
 type CertificateItem = {
   title: string;
   issuer: string;
@@ -32,6 +37,14 @@ type CertificateItem = {
 };
 
 const certificates: CertificateItem[] = [
+  {
+    title: 'GenAI Powered Data Analytics Job Simulation',
+    issuer: 'TATA | Forage',
+    date: 'March 29, 2026',
+    type: 'simulation',
+    image: certTataGenAi,
+    featured: true,
+  },
   {
     title: 'ArtPark CodeForge Hackathon',
     issuer: 'IISc Bangalore | Unstop',
@@ -171,6 +184,34 @@ const certificates: CertificateItem[] = [
     date: 'January 4, 2026',
     type: 'course',
     image: certJsIntermediate,
+  },
+  {
+    title: '3D for Advertising - How Brands Use 3D Animation',
+    issuer: 'TOPS Technologies',
+    date: 'January 25, 2026',
+    type: 'webinar',
+    image: certTops3d,
+  },
+  {
+    title: 'Designing with AI',
+    issuer: 'TOPS Technologies',
+    date: 'January 29, 2026',
+    type: 'webinar',
+    image: certTopsDesigningAi,
+  },
+  {
+    title: 'Git and GitHub for Software Developers',
+    issuer: 'TOPS Technologies',
+    date: 'January 25, 2026',
+    type: 'webinar',
+    image: certTopsGit,
+  },
+  {
+    title: 'Python with AI',
+    issuer: 'TOPS Technologies',
+    date: 'February 2, 2026',
+    type: 'webinar',
+    image: certTopsPythonAi,
   },
 ];
 
