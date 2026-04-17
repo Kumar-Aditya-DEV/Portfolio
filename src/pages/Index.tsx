@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 import BackgroundAnimation from '@/components/BackgroundAnimation';
@@ -38,6 +39,9 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
+      {/* SEO */}
+      <SEO />
+      
       {/* Custom Cursor */}
       <CustomCursor />
       
